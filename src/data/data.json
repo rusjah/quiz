@@ -1,13 +1,39 @@
-{
-    "resalt": {
-        "win": "You win!",
-        "faul": "You loose"
+[
+    {
+        "id": "1",
+        "ques": "If you are not sure about use of variable, use let keyword...",
+        "answ": ["True", "False", "Not sure"],
+        "corect": "false"
     },
-    "questions": [
-        {
-            "ques": "If you are not sure about use of variable, use let keyword...",
-            "answ": ["true", "false", "not sure"],
-            "corect": "false"
-        }
-    ]
-}
+    {
+        "id": "2",
+        "ques": "How are JavaScript and jQuery different?",
+        "answ": ["Js is a libary build with jQuery language, and jQuery - language itself", "JQuery is a libary build with js language, and Js - language itself", "The are not different"],
+        "corect": "JQuery is a libary build with js language, and Js - language itself"
+    },
+    {
+        "id": "3",
+        "ques": "Which of the following is an instruction to the web browser about what version of the markup language the page is written in?",
+        "answ": ["Doctype", "Markup", "Meta tag"],
+        "corect": "Doctype"
+    },
+    {
+        "id": "4",
+        "ques": "Which of the following is not an HTML tag?",
+        "answ": ["Table", "P", "Doctype"],
+        "corect": "Doctype"
+    },
+    {
+        "id": "5",
+        "ques": "How many ways can you apply colors in CSS?",
+        "answ": ["1", "2", "7"],
+        "corect": "7"
+    },
+    {
+        "id": "6",
+        "ques": "What are the two methods of forms transfer?",
+        "answ": ["Post and Recieve", "Get and Recieve", "Post and Get"],
+        "corect": "Post and Get"
+    }
+
+]
