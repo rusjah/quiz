@@ -7,9 +7,11 @@ import Quizz from './components/pages/Quizz';
 import GameOver from './components/pages/GameOver';
 import Error from './components/pages/Error';
 import data from './data/data.json'
+import { useState } from 'react';
 
 
 function App() {
+  const [result, setResult] = useState('')
   return (
     <div className="App">
       <Header />
