@@ -1,0 +1,13 @@
+{
+    "resalt": {
+        "win": "You win!",
+        "faul": "You loose"
+    },
+    "questions": [
+        {
+            "ques": "If you are not sure about use of variable, use let keyword...",
+            "answ": ["true", "false", "not sure"],
+            "corect": "false"
+        }
+    ]
+}
