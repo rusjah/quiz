@@ -6,26 +6,26 @@ import Home from './components/pages/Home';
 import Quizz from './components/pages/Quizz';
 import GameOver from './components/pages/GameOver';
 import Error from './components/pages/Error';
-// import quizzData from './data/data.json'
-import data from './data/data.json'
+import quizzData from './data/data.json'
+// import data from './data/data.json'
 
 import { useEffect, useState } from 'react';
 
 
 function App() {
   const [result, setResult] = useState(false);
-  // const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
 
   const numberOfQuestions = 5;
 
 
   function quesionsGenerate() {
-    // const index = [];
-    // for (let i = 0; i < numberOfQuestions; i++){
-    //   const ind = Math.floor(Math.random() * quizzData.length);
-    //   index.includes(ind) ? i -- : index.push(ind)
-    // }
-    // index.forEach(el =>  setData(prdata => [...prdata,  quizzData[el]]))
+    const index = [];
+    for (let i = 0; i < numberOfQuestions; i++){
+      const ind = Math.floor(Math.random() * quizzData.length);
+      index.includes(ind) ? i -- : index.push(ind)
+    }
+    index.forEach(el =>  setData(prdata => [...prdata,  quizzData[el]]))
   }
 
   return (

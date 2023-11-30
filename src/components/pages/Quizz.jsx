@@ -19,6 +19,7 @@ function Quizz({setResult, questions}) {
 
   function finish() {
       score > questions.length / 2 ? setResult(true) : setResult(false)
+      questions.splice(0, questions.length)
       setScore(i => 0)
       navigate('/gameOver')
   }
