@@ -3,7 +3,7 @@
         "id": "1",
         "ques": "If you are not sure about use of variable, use let keyword...",
         "answ": ["True", "False", "Not sure"],
-        "corect": "false"
+        "corect": "False"
     },
     {
         "id": "2",

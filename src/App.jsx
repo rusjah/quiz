@@ -6,25 +6,26 @@ import Home from './components/pages/Home';
 import Quizz from './components/pages/Quizz';
 import GameOver from './components/pages/GameOver';
 import Error from './components/pages/Error';
-import quizzData from './data/data.json'
+// import quizzData from './data/data.json'
+import data from './data/data.json'
+
 import { useEffect, useState } from 'react';
-import Question from './components/components/Question';
 
 
 function App() {
   const [result, setResult] = useState(false);
-  const [data, setData] = useState([]);
-
+  // const [data, setData] = useState([]);
 
   const numberOfQuestions = 5;
 
-  function checkQuestions() {
-    const index = [];
-    for (let i = 0; i < numberOfQuestions; i++){
-      const ind = Math.floor(Math.random() * quizzData.length);
-      index.includes(ind) ? i -- : index.push(ind)
-    }
-    index.forEach(el =>  setData(prdata => [...prdata,  quizzData[el]]))
+
+  function quesionsGenerate() {
+    // const index = [];
+    // for (let i = 0; i < numberOfQuestions; i++){
+    //   const ind = Math.floor(Math.random() * quizzData.length);
+    //   index.includes(ind) ? i -- : index.push(ind)
+    // }
+    // index.forEach(el =>  setData(prdata => [...prdata,  quizzData[el]]))
   }
 
   return (
@@ -32,7 +33,7 @@ function App() {
       <Header />
       <div className='h-[88vh] bg-gradient-to-r from-yellow-400 via-lime-100 to-yellow-200'>
           <Routes>
-              <Route path='/' element={<Home checkQuestions={checkQuestions}/>} />
+              <Route path='/' element={<Home quesionsGenerate={quesionsGenerate}/>} />
               <Route path='/quizz' element={<Quizz setResult={setResult} questions={data} />} />
               <Route path='/gameOver' element={<GameOver result={result} setResult={setResult}/>} />
               <Route path='/*' element={<Error />} />
